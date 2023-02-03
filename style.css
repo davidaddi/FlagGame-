@@ -17,6 +17,11 @@ a {
     all: unset;
 }
 
+h3 {
+    text-align: center;
+    color: #fff;
+}
+
  #flag {
     width: 350px;
 }
@@ -84,4 +89,9 @@ input {
 .btns {
     display: flex;
     margin-left: 40px;
+}
+
+p:last-child {
+    margin-top: 30px;
+    text-align: center;
 }
