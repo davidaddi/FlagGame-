@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess The Flag - </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="app.js"></script>
+    <script>
+        window.onload = function() {
+            getData();
+        };
+    </script>
+</head>
+<body>
+
+    
+<h1>GuessTheFlag</h1>
+<div class="app">
+    <div class="flagCanva">
+        <img width="100" id="flag" src="" alt="">
+    </div>
+
+    <div class="inputAns">
+        <input type="text" name="flagName" placeholder="Nom du pays">
+        <button type="submit" onclick="getVal()" class="btn">Je valide</button>  
+    </div>
+    <p class="answerText"></p>
+    <p class="result"></p><br>
+
+    <div class="btns">
+        <button onclick="next()" class="next btn2">Suivant</button>
+        <button onclick="getAnswer()" class="answer btn2">Réponse</button>
+        <button onclick="skip()" class="skip btn2">Je passe !</button>
+    </div>
+    
+    <p style="margin-top: 30px;">*Pensez à valider votre réponse avant de passer à la suivante</p>
+</div>
+    
+</body>
+</html>
