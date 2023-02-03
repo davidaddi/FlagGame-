@@ -45,7 +45,6 @@ function getAnswer() {
     document.querySelector('.result').innerHTML = flag;
     document.querySelector('.result').style.color = "white";
     document.querySelector('.next').disabled = true;
-    document.querySelector('.validateBtn').disabled = true;
     document.querySelector('.skip').innerHTML = 'Drapeau suivant';
 }
 
