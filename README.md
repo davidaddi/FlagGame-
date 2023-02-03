@@ -1,6 +1,3 @@
-# FlagGame
-Section 7 - Mission 1
-
 <h1>Principe</h1>
 <p> Un drapeau s'affiche aléatoirement à partir d'une API, le but est de deviner le nom du drapeau. Si on ne sait pas, il est possible de passer au suivant</p>
 
