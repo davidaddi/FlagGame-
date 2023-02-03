@@ -5,9 +5,9 @@ function getRandomInt(max) {
 let flag = "Cambodia"; 
 ans = false;
 answerDisplayed = false
+score = 0;
 
-
-  function getVal() {
+function getVal() {
     const inputValue = document.querySelector('input').value;
 
     if(inputValue.toLowerCase() != flag.toLowerCase()) {
@@ -21,6 +21,8 @@ answerDisplayed = false
         document.querySelector('.result').innerHTML = 'Bonne Réponse';
         document.querySelector('.result').style.color = "green";
         ans = true;
+        score=score+1;
+        document.querySelector('.score').innerHTML = score;
     }   
 }
 
@@ -43,6 +45,7 @@ function getAnswer() {
     document.querySelector('.result').innerHTML = flag;
     document.querySelector('.result').style.color = "white";
     document.querySelector('.next').disabled = true;
+    document.querySelector('.validateBtn').disabled = true;
     document.querySelector('.skip').innerHTML = 'Drapeau suivant';
 }
 
