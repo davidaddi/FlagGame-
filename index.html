@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guess The Flag - </title>
+    <title>Guess The Flag - Section 7</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,6 +13,7 @@
     <script>
         window.onload = function() {
             getData();
+            document.querySelector('.score').innerHTML = score;
         };
     </script>
 </head>
@@ -22,12 +23,14 @@
 <h1>GuessTheFlag</h1>
 <div class="app">
     <div class="flagCanva">
+        <h3>Score : <span class="score"></span></h3>
         <img width="100" id="flag" src="" alt="">
     </div>
+    
 
     <div class="inputAns">
         <input type="text" name="flagName" placeholder="Nom du pays">
-        <button type="submit" onclick="getVal()" class="btn">Je valide</button>  
+        <button type="submit" onclick="getVal()" class="validateBtn btn">Je valide</button>  
     </div>
     <p class="answerText"></p>
     <p class="result"></p><br>
@@ -38,7 +41,7 @@
         <button onclick="skip()" class="skip btn2">Je passe !</button>
     </div>
     
-    <p style="margin-top: 30px;">*Pensez à valider votre réponse avant de passer à la suivante</p>
+    <p>*Les réponses doivent être données en Anglais. <br>Pensez à valider votre réponse avant de passer à la suivante</p>
 </div>
     
 </body>
