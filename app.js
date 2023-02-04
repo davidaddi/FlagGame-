@@ -28,7 +28,6 @@ function getVal() {
     score = score + 1;
     document.querySelector('.score').innerHTML = score;
   }
-  validateButton.removeEventListener("click", getVal);
 }
 
 function getData() {
@@ -49,7 +48,7 @@ function getAnswer() {
   document.querySelector('.result').innerHTML = flag;
   document.querySelector('.result').style.color = "white";
   document.querySelector('.skip').innerHTML = 'Drapeau suivant';
-  // document.querySelector('.validateBtn').disabled = true;
+  document.querySelector('.validateBtn').disabled = true;
 }
 
 function skip() {
