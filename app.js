@@ -50,9 +50,6 @@ function getAnswer() {
   document.querySelector('.result').style.color = "white";
   document.querySelector('.skip').innerHTML = 'Drapeau suivant';
   // document.querySelector('.validateBtn').disabled = true;
-  document.querySelector('.validateBtn').addEventListener('click', function(){ 
-    document.querySelector('.result').style.color = "white";
-    document.querySelector('.result').innerHTML = 'Vous ne pouvez pas valider car vous avez demandé la réponse.'});
 }
 
 function skip() {
